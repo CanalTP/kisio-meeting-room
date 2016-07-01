@@ -1,0 +1,140 @@
+
+body, html {
+    height: 100%;
+    font-family: sans-serif;
+}
+
+.tbl {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.rw {
+    display: table-row;
+}
+
+.cell {
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.room-name {
+    text-align: center;
+    color: #ffffff;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+small {
+    font-size: 0.5em;
+}
+
+
+.availability {
+    text-align: center;
+}
+
+.return {
+    text-decoration: none;
+    color: #222222;
+}
+
+.big-icon {
+    font-size: 18em;
+    text-align: center;
+    color: #ffffff;
+}
+
+.big-icon .status {
+    font-size: 0.25em;
+}
+
+.status-dispo {
+    background-color: #35be42;
+}
+
+.status-occupied {
+    background-color: #eb3750;
+}
+
+
+.status {
+    font-size: 4em;
+    color: #ffffff;
+}
+
+.organizer {
+    font-size: 1.5em;
+    color: #ffffff;
+}
+
+.slot {
+    border-left: 1px solid #ffffff;
+}
+
+.slot-ok {
+    background-color: #35be42;
+}
+
+.slot-ko {
+    background-color: #eb3750;
+}
+
+.schedule-container {
+    margin: 2em auto;
+    width: 50%;
+    background-color: #ffffff;
+    padding: 1.5em 1em 0.5em 1em;
+}
+
+.schedule {
+    background-color: #ffffff;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    text-align: left;
+}
+
+.suggestions {
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.suggested-rooms {
+    font-size: 1.5em;
+    padding-left: 0;
+}
+
+.suggested-rooms li {
+    display: inline-block;
+    padding: 0 0.5em;
+
+}
+
+.suggested-rooms li:before {
+    content: '|';
+    margin-right: 1em;
+}
+
+.suggested-rooms li:first-child:before {
+    content: '';
+    margin-right: 0;
+}
+
+.time-cursor {
+    font-size: 2em;
+    position: absolute;
+    margin-top: -2.5em;
+    margin-left: 0%;
+    left: -0.35em;
+}
+
+.room-list {
+    font-size: 2em;
+    line-height: 2em;
+}

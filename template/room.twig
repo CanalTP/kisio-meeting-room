@@ -1,0 +1,58 @@
+{% extends 'base.twig' %}
+
+{% block body %}
+    <div class="tbl">
+        <div class="rw">
+            <div class="cell {% if room.available %}status-dispo{% else %}status-occupied{% endif %}">
+                <div class="room-name">
+                    Salle {{ room.name }} - Etage {{ room.level }}<br />
+                    <small>{{ room.email }}</small>
+                </div>
+
+                <div class="availability">
+                    {% if room.available %}
+                        <div class="fa fa-check status-available big-icon"></div>
+                        <div class="status">Salle disponible !</div>
+                    {% else %}
+                        <div class="fa fa-clock-o status-occupied big-icon"></div>
+                        <div class="status">Salle occupée</div>
+                        <div class="organizer">par {{ room.organizer }}</div>
+                    {% endif %}
+                </div>
+
+                <div class="schedule-container">
+                    <div class="schedule">
+                        <table>
+                            <tr>
+                                {% for slot in room.slots %}
+                                    <td class="slot {% if slot.availability %}slot-ok{% else %}slot-ko{% endif %}">&nbsp;</td>
+                                {% endfor %}
+                            </tr>
+                            <tr>
+                                {% for index, slot in room.slots %}
+                                    {% if (index % 4) == 0 %}
+                                        <td colspan="4" width="74">
+                                            {{ index / 2 }}h
+                                        </td>
+                                    {% endif %}
+                                {% endfor %}
+                            </tr>
+                        </table>
+                        <span class="fa fa-hand-o-down time-cursor" style="margin-left: {{ cursor_position }}%"></span>
+                    </div>
+                </div>
+
+                {% if not room.available %}
+                    <div class="suggestions">
+                        Suggestions de salles disponibles :<br />
+                        <ul class="suggested-rooms">
+                            {% for sroom in room.suggested_rooms %}
+                                <li>{{ sroom.label }} (Etage {{ sroom.floor }})</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

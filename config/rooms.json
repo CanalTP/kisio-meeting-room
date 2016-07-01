@@ -1,0 +1,114 @@
+{
+    "rooms": [
+        {
+            "name": "Argentine",
+            "email": "hmt-argentine@effia.fr",
+            "level": 2
+        },
+        {
+            "name": "Brésil",
+            "email": "hmt-bresil@effia.fr",
+            "level": 2
+        },
+        {
+            "name": "Croatie",
+            "email": "hmt-croatie@effia.fr",
+            "level": 2
+        },
+        {
+            "name": "Equateur",
+            "email": "hmt-equateur@effia.fr",
+            "level": 2
+        },
+        {
+            "name": "Espagne",
+            "email": "hmt-espagne@effia.fr",
+            "level": 2
+        },
+        {
+            "name": "Irlande",
+            "email": "hmt-irlande@effia.fr",
+            "level": 2
+        },
+        {
+            "name": "Italie",
+            "email": "hmt-italie@effia.fr",
+            "level": 2
+        },
+        {
+            "name": "Maroc",
+            "email": "hmt-maroc@effia.fr",
+            "level": 2
+        },
+        {
+            "name": "Norvège",
+            "email": "hmt-norvege@effia.fr",
+            "level": 2
+        },
+        {
+            "name": "Pays-Bas",
+            "email": "hmt-pays-bas@effia.fr",
+            "level": 2
+        },
+        {
+            "name": "Roussillon",
+            "email": "hmt-roussillon@effia.fr",
+            "level": 2
+        },
+        {
+            "name": "Russie",
+            "email": "hmt-russie@effia.fr",
+            "level": 2
+        },
+        {
+            "name": "Aquitaine",
+            "email": "hmt-aquitaine@effia.fr",
+            "level": 3
+        },
+        {
+            "name": "Bourgogne",
+            "email": "hmt-bourgogne@effia.fr",
+            "level": 3
+        },
+        {
+            "name": "Ile-de-France",
+            "email": "hmt-idf@effia.fr",
+            "level": 4
+        },
+        {
+            "name": "Lorraine",
+            "email": "hmt-lorraine@effia.fr",
+            "level": 4
+        },
+        {
+            "name": "Luxembourg",
+            "email": "hmt-luxembourg@effia.fr",
+            "level": 4
+        },
+        {
+            "name": "Pays de la Loire",
+            "email": "hmt-paysdelaloire@effia.fr",
+            "level": 5
+        },
+        {
+            "name": "Picardie",
+            "email": "hmt-picardie@effia.fr",
+            "level": 5
+        },
+        {
+            "name": "Provence-Alpes-Cote d'Azur",
+            "email": "hmt-paca@effia.fr",
+            "level": 5
+        },
+        {
+            "name": "Champagne",
+            "email": "hmt-champagne@effia.fr",
+            "level": 6
+        },
+        {
+            "name": "Limousin",
+            "email": "hmt-limousin@effia.fr",
+            "level": 7
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{% extends 'base.twig' %}
+
+{% block body %}
+    <h1>Salles à Hector Malot</h1>
+
+    <ul class="room-list">
+        {% for index, room in rooms %}
+            <li><a href="room.php?email={{ room.email }}">{{ room.name }} - Etage {{ room.level }}</a></li>
+        {% endfor %}
+    </ul>
+{% endblock %}

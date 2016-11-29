@@ -23,7 +23,7 @@ foreach ($rooms->rooms as $room) {
 }
 
 $client = new GuzzleHttp\Client();
-$res = $client->get('http://apoc.zibok.org:8000/booking/room/'.$email.'/is_available');
+$res = $client->get('http://apoc.zibok.org:8000/booking/room/'.$email);
 
 $roomData = json_decode($res->getBody()->getContents());
 
